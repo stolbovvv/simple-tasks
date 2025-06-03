@@ -1,0 +1,24 @@
+/* App styles */
+
+.app {
+	display: grid;
+	place-content: center;
+	height: 100vh;
+	height: 100dvh;
+	background: linear-gradient(135deg, var(--color-green-400), var(--color-blue-400));
+	text-align: center;
+	text-wrap: balance;
+}
+
+.app h1 {
+	margin-block-start: 0;
+	mix-blend-mode: overlay;
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.app p {
+	max-width: 48rem;
+	opacity: 0.5;
+	font-size: 1.125rem;
+}

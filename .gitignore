@@ -1,0 +1,31 @@
+# Build output
+dist/
+build/
+
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archives
+*.7z
+*.gz
+*.rar
+*.tar
+*.zip
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Editor settings
+.idea
+.vscode
+
+# MacOS specific files
+.DS_Store

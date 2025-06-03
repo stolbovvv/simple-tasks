@@ -1,0 +1,126 @@
+@layer global-styles, typography-styles;
+
+@layer global-styles {
+	:root {
+		--color-neutral-100: hsl(0, 0%, 100%);
+		--color-neutral-500: hsl(0, 0%, 50%);
+		--color-neutral-900: hsl(0, 0%, 0%);
+
+		--color-green-400: hsl(142, 92%, 85%);
+		--color-green-500: hsl(142, 92%, 75%);
+		--color-green-600: hsl(142, 92%, 65%);
+
+		--color-blue-400: hsl(200, 82%, 86%);
+		--color-blue-500: hsl(200, 82%, 76%);
+		--color-blue-600: hsl(200, 82%, 56%);
+
+		--font-family-primary: "Arial", "Helvetica", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+
+		--font-size-sm: 0.875rem;
+		--font-size-md: 1rem;
+		--font-size-lg: 1.25rem;
+
+		--font-weight-sm: 200;
+		--font-weight-md: 400;
+		--font-weight-lg: 700;
+
+		--line-height-sm: 1.1;
+		--line-height-md: 1.4;
+	}
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	p,
+	figure,
+	blockquote,
+	dl,
+	dd {
+		margin-block-end: 0;
+	}
+
+	img,
+	picture {
+		display: block;
+		max-width: 100%;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+
+		*,
+		*::before,
+		*::after {
+			transition-duration: 0.01ms !important;
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			scroll-behavior: auto !important;
+		}
+	}
+}
+
+@layer typography-styles {
+	body {
+		font-family: var(--font-family-primary);
+		font-size: var(--font-size-md);
+		font-weight: var(--font-weight-md);
+		line-height: var(--line-height-md);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	button,
+	input,
+	label {
+		line-height: 1.1;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		text-wrap: balance;
+	}
+
+	a:not([class]) {
+		text-decoration-skip-ink: auto;
+		color: currentColor;
+	}
+
+	ul[role="list"],
+	ol[role="list"] {
+		list-style: none;
+	}
+
+	input,
+	button,
+	textarea,
+	select {
+		font-family: inherit;
+		font-size: inherit;
+	}
+}
