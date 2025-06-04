@@ -56,6 +56,12 @@
 	.form__filed {
 		flex-direction: column;
 		row-gap: 0.625rem;
+		order: 2;
 		text-align: center;
+	}
+
+	.form__error {
+		order: 1;
+		margin-block: 0 0.5em;
 	}
 }
