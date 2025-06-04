@@ -1,0 +1,52 @@
+/* Head styles */
+
+.head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 1.25rem;
+}
+
+.head__logo {
+	display: flex;
+	align-items: center;
+	column-gap: 0.625rem;
+}
+
+.head__logo-icon {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.head__logo-name {
+	opacity: 0.25;
+	font-weight: 900;
+	line-height: 1;
+}
+
+.head__info {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+}
+
+.head__info-label {
+	opacity: 0.5;
+}
+
+.head__info-value {
+	margin-inline-start: 0.25em;
+}
+
+.head__info-value-count {
+	opacity: 0.5;
+}
+
+.head__info-value-slash {
+	margin-inline: 0.125em;
+	opacity: 0.5;
+}
+
+.head__info-value-total {
+	opacity: 0.25;
+}

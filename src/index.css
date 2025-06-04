@@ -14,7 +14,19 @@
 		--color-blue-500: hsl(200, 82%, 76%);
 		--color-blue-600: hsl(200, 82%, 56%);
 
-		--font-family-primary: "Arial", "Helvetica", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+		--color-red-400: hsl(0, 82%, 86%);
+		--color-red-500: hsl(0, 82%, 76%);
+		--color-red-600: hsl(0, 82%, 56%);
+
+		--linear-gradient-400: linear-gradient(135deg, var(--color-green-400), var(--color-blue-400));
+		--linear-gradient-500: linear-gradient(135deg, var(--color-green-500), var(--color-blue-500));
+		--linear-gradient-600: linear-gradient(135deg, var(--color-green-600), var(--color-blue-600));
+
+		--shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+		--shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+		--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+
+		--font-family-primary: "Inter Variable", sans-serif;
 
 		--font-size-sm: 0.875rem;
 		--font-size-md: 1rem;

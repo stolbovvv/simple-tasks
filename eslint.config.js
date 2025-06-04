@@ -39,10 +39,11 @@ export default defineConfig([
 			},
 		},
 		rules: {
-			'prettier/prettier': 'warn',
+			'react/prop-types': 'off',
 			'react-hooks/rules-of-hooks': 'error',
 			'react-hooks/exhaustive-deps': 'warn',
 			'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+			'prettier/prettier': 'warn',
 			'@typescript-eslint/no-unused-vars': [
 				'error',
 				{

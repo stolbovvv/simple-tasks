@@ -1,0 +1,63 @@
+/* Task styles */
+
+.task {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 0.625rem;
+	padding-block: 0.625rem;
+}
+
+.task__check {
+	flex: 0 0 auto;
+	padding: 0.125rem;
+	width: 1.25rem;
+	height: 1.25rem;
+	border: 1px solid var(--color-green-600);
+	border-radius: 50%;
+	background: none;
+	cursor: pointer;
+}
+
+.task__check:focus,
+.task__check:hover {
+	box-shadow: 0 0 0 1px var(--color-green-600);
+}
+
+.task__check-icon {
+	width: 100%;
+	height: 100%;
+}
+
+.task__name {
+	margin-block-start: 0.1em;
+	opacity: 0.5;
+	font-size: var(--font-size-sm);
+}
+
+.task__name[data-completed="true"] {
+	opacity: 0.25;
+	text-decoration: line-through;
+}
+
+.task__delete {
+	flex: 0 0 auto;
+	margin-inline-start: auto;
+	padding: 0.125rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: none;
+	border-radius: 50%;
+	background: none;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.task__delete:focus,
+.task__delete:hover {
+	opacity: 1;
+}
+
+.task__delete-icon {
+	width: 100%;
+	height: 100%;
+}
