@@ -14,7 +14,7 @@ interface TaskData {
 export const App = () => {
 	const [tasks, setTasks] = useState<TaskData[]>([
 		{ id: 3, content: 'Получить ⭐ на GitHub ', completed: false },
-		{ id: 2, content: 'Опубликовать приложение', completed: false },
+		{ id: 2, content: 'Опубликовать приложение', completed: true },
 		{ id: 1, content: 'Создать приложение', completed: true },
 	]);
 
