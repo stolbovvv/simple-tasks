@@ -19,6 +19,7 @@ export const Form: React.FC<FormProps> = ({ className, onCreate }) => {
 			setIsError(true);
 		} else {
 			onCreate(content);
+			setContent('');
 		}
 	};
 
